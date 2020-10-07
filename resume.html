@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./res.css">
     <title>TechnicalCV_Resume-page</title>
+
+    <script src="./youtube.js"></script>
+
 </head>
 <body>
     <!--Nav-->
@@ -19,6 +22,8 @@
             </div>
           </div>
           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigate/Menu</span>
+        </div>
+
      <!--Nav-->
 
      <!--porfolio-->
@@ -27,7 +32,7 @@
             <div class="two-column-wraper">
 
               <div class="profile-img-wraper">
-                <img src="images/self.jpg" alt="selfport" width="700" height="750"> 
+                <img src="images/self.jpg" alt="selfport" class="self" width="700" height="750"> 
               </div>
 
               <div class="profile-cont-warper">
@@ -35,16 +40,19 @@
                 <h1>Nice to meet you.</h1>
                 <p class="p1">A bit about me : </p>
 
-                <p class="pabt">I am  a hard working individual who likes being challenged in his tasks. I am a reliable, hardworking and cable individual that will see to it that the task at hand is done to my utmost best and then some. I am aslo a very outgoing and lively persone who loves working with people.</p>
-                <p class="pabt">I went to high school at Driehoek which I completed in 2017. I am curently completing my Bsc IT degree at North west university's vaal campus. I started my degree in 2018 and will be completing it at the end of 2020.</p>
-                <p class="pabt">My skill set is fairly well set but not set in stone as I am  eager to learn. I also like working under or with more experianced co-workers to absorb and learn from them. I easily adapt to new development or networking environments.</p>
-                <p class="pabt">Below is a visual representation of what I belief my set of skills are. It might not be the best skill statistics, but those statistics might surprise you if you see what I could do on the job!</p>
+                <p class="pabt">I am a hard working individual who likes being challenged in his tasks. I am a reliable, hardworking and cable individual that will see to it that the task at hand is done to my utmost best. I am also a very outgoing and lively person who loves working with people.</p>
+                <p class="pabt">I went to High School Driehoek where I matriculted in 2017. I am currently completing my BSc IT degree at North West University Vaal campus. I started my degree in 2018 and will be completing it at the end of 2020.</p>
+                <p class="pabt">My skill set is fairly well set but not set in stone as I am eager to learn. I also like working under or with more experienced co-workers in order to absorb and learn from them. I easily adapt to new development- or networking environments.</p>
+                <p class="pabt">Below is a visual representation of what I believe my set of skills are. It might not be the best skill statistics, but those statistics might surprise you if you see what I could do on the job!</p>
 
               </div>
 
             </div>
           </div>
     <!--portfolio-->
+
+
+    <p class="in">PS. I made this web site from scratch using visual studio code  with html5, css and .js </p>
 
     <!--Skills-->
     
@@ -58,7 +66,7 @@
 
         <p>CSS</p>
         <div class="container">
-          <div class="skills css">80%</div>
+          <div class="skills css">70%</div>
         </div>
 
         <p>JavaScripting</p>
@@ -100,16 +108,55 @@
         <div class="container">
           <div class="skills doc">90%</div>
         </div>
+     </div>
+    <!--skills-->    
+
+        <!--youtubeAPI-->
+        <div class="api-wraper">
+
+          <header class="logo-wraper">
+            <img src="./images/logo.png" alt="" class="ylogo">
+          </header>
+
+          <div class="vid-warper">
+
+            <iframe width="650" height="200" src="https://www.youtube.com/embed/videoseries?list=PLE3poZDTxyBGqh7T2hLL3WkQZqTQYYLl5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </div>
+
+          <div class="hub-warper">
+            <img src="./images/hub.jpg" alt="" class="hlogo">
+            <p class="prhub">
+              -- My projects --
+            </p>
+          </div>
+
+          <div class="proj-warper">
+            <a href="https://github.com/MarkWerth1223/MySqlProject" target="_blank" class="pj1">
+              My Sql Project
+            </a>
+          </div>
+
+          <div class="proj-warper">
+            <a href="https://github.com/MarkWerth1223/NewSQLProj" target="_blank" class="pj1">
+              Test Sql Project
+            </a>
+          </div>
+          <div class="proj-warper">
+            <a href="https://github.com/MarkWerth1223/techcv" target="_blank" class="pj1">
+              The project you are in now
+            </a>
+          </div>
 
 
-    </div>
 
-    <!--skills-->
+        </div>
+    <!--youtubeAPI-->
 
     <!--cv button-->
           <div class="download-pfd-content">
            <button class="down">  
-             <a href="files/Cerriculum_Vitae.pdf" type="button" class="down">Download CV</a>
+             <a href="files/Cerriculum_Vitae.pdf" target="_blank" type="button" class="down">Download CV</a>
             </button>
           </div>
     <!--cv button-->
@@ -124,15 +171,12 @@
             }
             </script>
     
-    </div>
 
     <!--toTopButton-->
     <button onclick="gototopFunction()" id="btntop" title=" top">Go To Top</button>
     <script>
-      //Get the button
       var mybutton = document.getElementById("btntop");
       
-      // When the user scrolls down 20px from the top of the document, show the button
       window.onscroll = function() {scrollFunction()};
       
       function scrollFunction() {
@@ -143,7 +187,6 @@
         }
       }
       
-      // When the user clicks on the button, scroll to the top of the document
       function gototopFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
@@ -151,9 +194,6 @@
       </script>
     <!--toTopButton-->
 
-    
 
-
-    
 </body>
 </html>

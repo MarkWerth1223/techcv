@@ -5,6 +5,7 @@ body{
     background-color: rgba(138, 112, 112, 0.562);
     margin: 0;
     height: 80%;
+    text-decoration: none;
 }
 html{
     font-size: 20px;
@@ -78,9 +79,17 @@ html{
 .contact-wraper{
   padding-top: 20px;
   background-color: rgba(0, 0, 0, 0.466);
-  height: 400px;
+  height: 630px;
   margin: 20px;
   display: grid;
+  margin:  0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-wraper .face{
+  margin:  0 auto;
+  text-align: center;
 }
 
 .cont-h{
@@ -100,7 +109,7 @@ html{
     margin: auto;
     text-decoration: none;
     display: inline-block;
-    padding: 10px 30px;
+    padding: 20px 40px;
     color: rgb(12, 119, 241);
     background-color: black;
     border: 2px solid rgb(5, 76, 156);
@@ -195,6 +204,7 @@ html{
   height: 465px;
   margin-top: 45px;
   padding-top: 0px;
+  margin-bottom: 70px;
   background-color: rgba(0, 0, 0, 0.479);
 }
 
@@ -241,10 +251,42 @@ html{
 
 /*footer*/
 .footer{
-  margin-top: 250px;
-  height: 80px;
-  background-color: rgba(133, 154, 245, 0.404);
+  margin-top: 30px;
+  padding-top: 30px;
+  margin: 0 auto;
   text-align: center;
+  height: 10vh;
+  background-color: rgba(133, 154, 245, 0.404);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+.face{
+  height: 38px;
+  padding-right: 1px;
+}
+
+.face:hover{
+  border: 3px solid rgb(30, 5, 253);
+  background-color: blue;
+} 
+
+.gith{
+  height: 38px;
+  padding-left: 1px;
+}
+
+.gith:hover{
+  border: 3px solid rgb(71, 71, 71);
+  background-color: rgb(64, 64, 66);
+
+}
+
+.fbh{
+  margin: 0;
+}
+.git{
+  margin: 0;
+}
+/*footer*/
 
 /* E X P E R I E N C E _ P A G E */
